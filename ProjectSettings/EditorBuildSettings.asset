@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/TANKWambo/TANKWambo_test.unity
+    path: Assets/TANKWambo/TANKWambo_Swarmer.unity
     guid: 9a97f4c478efd404d968b50c4c45b52e
   m_configObjects: {}
