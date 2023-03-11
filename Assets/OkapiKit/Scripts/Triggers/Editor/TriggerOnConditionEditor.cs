@@ -7,12 +7,14 @@ using UnityEngine;
 public class TriggerOnConditionEditor : TriggerEditor
 {
     SerializedProperty propConditions;
+    SerializedProperty propElseActions;
 
     protected override void OnEnable()
     {
         base.OnEnable();
 
         propConditions = serializedObject.FindProperty("conditions");
+        propElseActions = serializedObject.FindProperty("elseActions");
     }
 
     protected override Texture2D GetIcon()
@@ -28,7 +30,7 @@ public class TriggerOnConditionEditor : TriggerEditor
 
         if (WriteTitle())
         {
-            StdEditor(false);
+            StdEditor(false, false);
 
             var trigger = (target as TriggerOnCondition);
             if (trigger == null) return;
@@ -39,6 +41,16 @@ public class TriggerOnConditionEditor : TriggerEditor
             EditorGUI.EndChangeCheck();
 
             ActionPanel();
+
+            var actionsRect = GUILayoutUtility.GetLastRect();
+            actionsRect = new Rect(actionsRect.xMin, actionsRect.yMax, actionsRect.width, 20.0f);
+
+            TryDragActionToActionDelayList(actionsRect, propElseActions);
+
+            EditorGUILayout.PropertyField(propElseActions, new GUIContent("Else Actions"), true);
+
+            serializedObject.ApplyModifiedProperties();
+            (target as Trigger).UpdateExplanation();
         }
     }
 }
