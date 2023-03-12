@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "Reset game when player is killed. Trigger is called from player
-    collision.\n----------------\nEvery [0,5,5] seconds, trigger the actions::\n
-    First, \n           switches to scene TANKWambo_test\n"
+    collision.\n----------------\nEvery [0,5,5] seconds, trigger the actions::\nFirst,
+    \n           switches to scene TANKWambo_test\n"
   description: Reset game when player is killed. Trigger is called from player collision.
   enableTrigger: 0
   allowRetrigger: 1
@@ -522,13 +522,15 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -10575,7 +10577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &993274999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10750,7 +10752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
-    starts:\n First, \n          destroys this object\n          plays sound explosion_sound
+    starts:\n          destroys this object\n          plays sound explosion_sound
     at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
@@ -14564,9 +14566,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8382344259849635922, guid: 9dedd07ba83556f428fda5713bec7920, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8382344259849635933, guid: 9dedd07ba83556f428fda5713bec7920, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 94019394}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9dedd07ba83556f428fda5713bec7920, type: 3}
+--- !u!1001 &9109206875503599799
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9119894418562801125, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_Name
+      value: Puffer_Tank
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119894418562801127, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b130f195fe66ea8408fec6d0e5b8c2af, type: 3}

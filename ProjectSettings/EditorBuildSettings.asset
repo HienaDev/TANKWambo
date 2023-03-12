@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/TANKWambo/TANKWambo_Swarmer.unity
     guid: 9a97f4c478efd404d968b50c4c45b52e
+  - enabled: 1
+    path: Assets/TANKWambo/TANKWambo_3_cannon.unity
+    guid: 76b64346039b13747ba784949449e1bf
+  - enabled: 0
+    path: Assets/TANKWambo/TANKWambo_Puffer.unity
+    guid: 0ff4be59e145a474cb9b5adfb8bc27e0
+  - enabled: 0
+    path: Assets/TANKWambo/TANKWambo_test.unity
+    guid: eabe3bcbbb3445b4a8ad4e9ec4eecb60
   m_configObjects: {}

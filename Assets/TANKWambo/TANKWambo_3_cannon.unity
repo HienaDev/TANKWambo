@@ -522,13 +522,15 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -14512,17 +14514,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 12563352, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 12563352, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
+      propertyPath: _explanation
+      value: 'Follows the closest object tagged with [Player], at 3 units per second,
+        up to a distance of 5 units.
+
+        This object''s up''s axis will rotate
+        towards the direction of movement, at a maximum speed of 360 degrees/sec.
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 5.65
       objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.31
       objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_LocalPosition.z
