@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "Reset game when player is killed. Trigger is called from player
-    collision.\n----------------\nEvery [0,5,5] seconds, trigger the actions::\nFirst,
-    \n           switches to scene TANKWambo_test\n"
+    collision.\n----------------\nEvery [0.5,5] seconds, trigger the actions::\n          
+    switches to scene TANKWambo_test\n"
   description: Reset game when player is killed. Trigger is called from player collision.
   enableTrigger: 0
   allowRetrigger: 1
@@ -14534,11 +14534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.65
+      value: 9.35
       objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.31
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_LocalPosition.z

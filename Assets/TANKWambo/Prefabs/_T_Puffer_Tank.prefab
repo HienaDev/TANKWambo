@@ -1019,9 +1019,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When (not (ProbeIntersect(Puffer_Tank,[Wall,Destructable]) and ((DistanceTo(Tag[Player])
-    <= 10):\n          enables component Puffer_Tank (MovementFollow) on Puffer_Tank\nelse\n         
-    disables component Puffer_Tank (MovementFollow) on Puffer_Tank\n"
+  _explanation: "When (not (ProbeIntersect(_T_Puffer_Tank,[Wall,Destructable]) and
+    ((DistanceTo(Tag[Player]) <= 10):\n          enables component _T_Puffer_Tank
+    (MovementFollow) on _T_Puffer_Tank\nelse\n          disables component _T_Puffer_Tank
+    (MovementFollow) on _T_Puffer_Tank\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -1271,9 +1272,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(Puffer_Tank,[Wall]) and Every 5 seconds,
-    trigger the actions::\n          spawns prefab _B_Puffer at the position of Bullet
-    Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
+  _explanation: "If (not (ProbeIntersect(_T_Puffer_Tank,[Wall]) and ((TagCount(PufferBullet)
+    < 2) and Every [2,5] seconds, trigger the actions::\n          spawns prefab
+    _B_Puffer at the position of Bullet Spawner\n          plays sound shoot_sound
+    at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -1291,13 +1293,25 @@ MonoBehaviour:
     comparison: 0
     value: 0
     percentageCompare: 0
+  - negate: 0
+    valueHandler: {fileID: 0}
+    variable: {fileID: 0}
+    valueType: 1
+    tag: {fileID: 11400000, guid: 79a5ea8e42aa0c94788bfc1b100f56c1, type: 2}
+    sourceTransform: {fileID: 0}
+    rigidBody: {fileID: 0}
+    axis: 0
+    probe: {fileID: 2323939456968491763}
+    comparison: 1
+    value: 2
+    percentageCompare: 0
   actions:
   - delay: 0
     action: {fileID: 9119894420257692314}
   - delay: 0
     action: {fileID: 9119894420257692315}
   startTriggered: 0
-  timeInterval: {x: 5, y: 5}
+  timeInterval: {x: 2, y: 5}
 --- !u!114 &9119894420257692314
 MonoBehaviour:
   m_ObjectHideFlags: 0
