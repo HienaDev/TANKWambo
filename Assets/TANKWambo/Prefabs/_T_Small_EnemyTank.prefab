@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 3645141961455844832}
   - component: {fileID: 3645141961455844833}
   m_Layer: 0
-  m_Name: Small_EnemyTank
+  m_Name: _T_Small_EnemyTank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

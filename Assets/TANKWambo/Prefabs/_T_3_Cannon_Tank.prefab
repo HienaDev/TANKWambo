@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 12563359}
   - component: {fileID: 12563360}
   m_Layer: 0
-  m_Name: 3_Cannon_Tank
+  m_Name: _T_3_Cannon_Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

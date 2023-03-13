@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 6257964811370029371}
   - component: {fileID: 1470842988599954581}
   m_Layer: 0
-  m_Name: Swarm_Tank
+  m_Name: _T_Swarmer_Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

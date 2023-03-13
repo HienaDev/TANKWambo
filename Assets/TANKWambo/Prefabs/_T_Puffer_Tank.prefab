@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 2323939456968491763}
   - component: {fileID: 6785286350752916048}
   m_Layer: 0
-  m_Name: Puffer_Tank
+  m_Name: _T_Puffer_Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
