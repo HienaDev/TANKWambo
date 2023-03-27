@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using NaughtyAttributes;
 
+[DisallowMultipleComponent]
 public class HypertaggedObject : OkapiElement
 {
     [SerializeField] 
     private List<Hypertag>  hypertags;
 
+    public Hypertag[] GetTags() {  return hypertags.ToArray(); }
+
     public string GetTagString()
     {
-        if ((hypertags == null) || (hypertags.Count == 0)) return "Hypertag";
+        if ((hypertags == null) || (hypertags.Count == 0)) return "";
 
         string ret = "";
         foreach (var tag in hypertags)
@@ -84,13 +87,9 @@ public class HypertaggedObject : OkapiElement
         var objs = FindObjectsOfType<HypertaggedObject>();
         foreach (var obj in objs)
         {
-            foreach (var t in tags)
+            if (obj.Has(tags))
             {
-                if (obj.Has(t))
-                {
-                    ret.Add(obj.gameObject);
-                    break;
-                }
+                ret.Add(obj.gameObject);
             }
         }
 
@@ -107,7 +106,6 @@ public class HypertaggedObject : OkapiElement
             if (obj.Has(tag))
             {
                 ret.Add(obj.gameObject);
-                break;
             }
         }
 
