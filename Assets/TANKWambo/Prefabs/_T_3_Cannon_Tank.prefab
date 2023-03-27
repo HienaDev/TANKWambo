@@ -281,7 +281,7 @@ MonoBehaviour:
   _showInfo: 1
   _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
     starts:\n          plays sound explosion_sound at volume 1 and at pitch 1\n         
-    spawns prefab _M_Explosion at the position of this object (3_Cannon_Tank)\n         
+    spawns prefab _M_Explosion at the position of this object (_T_3_Cannon_Tank)\n         
     destroys the parent of this object\n"
   description: 
   enableTrigger: 1
@@ -360,9 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When ((ProbeIntersect(3_Cannon_Tank,[Wall,Destructable]):\n         
-    disables component 3_Cannon_Tank (MovementFollow) on 3_Cannon_Tank\nelse\n         
-    enables component 3_Cannon_Tank (MovementFollow) on 3_Cannon_Tank\n"
+  _explanation: "When ((ProbeIntersect(_T_3_Cannon_Tank,[Wall,Destructable]):\n         
+    disables component _T_3_Cannon_Tank (MovementFollow) on _T_3_Cannon_Tank\nelse\n         
+    enables component _T_3_Cannon_Tank (MovementFollow) on _T_3_Cannon_Tank\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -650,10 +650,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(3_Cannon_Tank,[Wall,Destructable]) and Every
-    2 seconds, trigger the actions::\n          spawns prefab _B_Default at the position
-    of Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch
-    1\n"
+  _explanation: "If (not (ProbeIntersect(_T_3_Cannon_Tank,[Wall]) and Every 2 seconds,
+    trigger the actions::\n          spawns prefab _B_Default at the position of
+    Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -974,10 +973,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(3_Cannon_Tank,[Wall,Destructable]) and Every
-    2 seconds, trigger the actions::\n          spawns prefab _B_Default at the position
-    of Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch
-    1\n"
+  _explanation: "If (not (ProbeIntersect(_T_3_Cannon_Tank,[Wall]) and Every 2 seconds,
+    trigger the actions::\n          spawns prefab _B_Default at the position of
+    Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -1163,10 +1161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(3_Cannon_Tank,[Wall,Destructable]) and Every
-    2 seconds, trigger the actions::\n          spawns prefab _B_Default at the position
-    of Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch
-    1\n"
+  _explanation: "If (not (ProbeIntersect(_T_3_Cannon_Tank,[Wall]) and Every 2 seconds,
+    trigger the actions::\n          spawns prefab _B_Default at the position of
+    Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
