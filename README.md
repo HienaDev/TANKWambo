@@ -28,7 +28,7 @@ TANKWambo!™ is a 2D top-down shooter where you play as Tank Commander Wambo, y
 
 # Metadata
 
-* Autor: [Wilson Almeida]
+* Author: [Wilson Almeida]
 
 [Wilson Almeida]:https://github.com/wilroda
 [Diogo Andrade]:https://github.com/VideojogosLusofona/OkapiKit
