@@ -527,8 +527,8 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Time: 0.25
   m_Parameters:
@@ -689,9 +689,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7b8445ff7337a3b479c9d1867415b2cd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -877,6 +877,7 @@ MonoBehaviour:
   rigidBodyComponent: {fileID: 0}
   changeType: 0
   operation: 0
+  floatPlatformerOperation: 0
   percentageValue: {x: 1, y: 1}
   value: {x: 1, y: 1}
   axis: 0
@@ -889,6 +890,8 @@ MonoBehaviour:
   maxVelocity: {x: 10, y: 10}
   clampSpeed: 0
   clampTo: {x: 0, y: 0}
+  fValue: 0
+  iValue: 0
 --- !u!114 &7846667117812496923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1003,6 +1006,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -1067,6 +1071,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 3
     value: 0
     percentageCompare: 0

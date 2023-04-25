@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "Reset game when player is killed. Trigger is called from player
-    collision.\n----------------\nEvery [0.5,5] seconds, trigger the actions::\n          
+    collision.\n----------------\nEvery [0.5,5] seconds, trigger the actions::\n         
     switches to scene TANKWambo_test\n"
   description: Reset game when player is killed. Trigger is called from player collision.
   enableTrigger: 0
@@ -531,6 +531,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -619,7 +620,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6abcff5c053fa3f4b8567447981f3a29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -754,7 +755,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1970767857
+  m_SortingLayerID: 794614101
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -10709,7 +10710,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1597665baf0bc304197bd6769a6c7988, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10852,7 +10853,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000000f78888a3bc69e496fe04d00191e6a77
+  m_ApplyToSortingLayers: 0000000055d95c2f5bd621637b288be4
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -11296,9 +11297,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1235142203
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 794614101
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -14358,9 +14359,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1235142203
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 794614101
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -14514,20 +14515,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 12563352, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
-      propertyPath: speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 12563352, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
-      propertyPath: _explanation
-      value: 'Follows the closest object tagged with [Player], at 3 units per second,
-        up to a distance of 5 units.
-
-        This object''s up''s axis will rotate
-        towards the direction of movement, at a maximum speed of 360 degrees/sec.
-
-'
-      objectReference: {fileID: 0}
     - target: {fileID: 6831983965304286344, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -14576,6 +14563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 3_Cannon_Tank
       objectReference: {fileID: 0}
+    - target: {fileID: 6831983965304286346, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87f73a41bd5de0e4d840a366268d8ebe, type: 3}
 --- !u!1001 &8382344258859722624
@@ -14592,6 +14583,10 @@ PrefabInstance:
     - target: {fileID: 8382344258456899128, guid: 9dedd07ba83556f428fda5713bec7920, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8382344258456899128, guid: 9dedd07ba83556f428fda5713bec7920, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8382344258456899129, guid: 9dedd07ba83556f428fda5713bec7920, type: 3}
       propertyPath: m_RootOrder

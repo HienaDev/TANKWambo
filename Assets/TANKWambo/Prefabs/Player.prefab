@@ -104,7 +104,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2003443225
-  m_SortingLayer: 4
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: fd270a3bb0b4d0e4e9abc34e39f182b0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,6 +155,7 @@ MonoBehaviour:
   targetType: 2
   targetTag: {fileID: 0}
   targetObject: {fileID: 0}
+  stoppingDistance: 0
   relativeMovement: 0
   rotateTowardsDirection: 0
   alignAxis: 0
@@ -306,8 +307,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f3c91ddec42034f7ab24db691efa2d0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -432,9 +433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
-    starts:\n First, \n          plays sound explosion_sound at volume 1 and at pitch
-    1\n          enables trigger UNDEFINED\n          destroys this object\n         
-    Destroys object Crosshair\n"
+    starts:\n          plays sound explosion_sound at volume 1 and at pitch 1\n         
+    enables trigger UNDEFINED\n          destroys this object\n          Destroys
+    object Crosshair\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 0
@@ -620,8 +621,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: feeb95e5778f64d3a9063274954d01de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -688,9 +689,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When button Fire1 is held (this can only happen every 1 seconds):\nFirst,
-    \n          spawns prefab _B_Default at the position of Bullet Spawner\n         
-    plays sound shoot_sound at volume 1 and at pitch 1\n"
+  _explanation: "When button Fire1 is held (this can only happen every 1 seconds):\n         
+    spawns prefab _B_Default at the position of Bullet Spawner\n          plays sound
+    shoot_sound at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -730,13 +731,16 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -816,8 +820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When button Fire2 is held (this can only happen every 5 seconds):\n
-    First, \n          spawns prefab Mine at the position of this object (Minelayer)\n         
+  _explanation: "When button Fire2 is held (this can only happen every 5 seconds):\nFirst,
+    \n          spawns prefab Mine at the position of this object (Minelayer)\n         
     plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
   enableTrigger: 1
@@ -858,13 +862,16 @@ MonoBehaviour:
   actionTags: []
   hasConditions: 0
   actionConditions:
-  - valueHandler: {fileID: 0}
+  - negate: 0
+    valueHandler: {fileID: 0}
     variable: {fileID: 0}
     valueType: 0
     tag: {fileID: 0}
     sourceTransform: {fileID: 0}
     rigidBody: {fileID: 0}
     axis: 0
+    probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0

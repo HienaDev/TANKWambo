@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _showInfo: 1
   _explanation: "Reset game when player is killed. Trigger is called from player
-    collision.\n----------------\nEvery [0,5,5] seconds, trigger the actions::\nFirst,
-    \n           switches to scene TANKWambo_test\n"
+    collision.\n----------------\nEvery [0.5,5] seconds, trigger the actions::\n         
+    switches to scene TANKWambo_test\n"
   description: Reset game when player is killed. Trigger is called from player collision.
   enableTrigger: 0
   allowRetrigger: 1
@@ -541,7 +541,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1970767857
+  m_SortingLayerID: 794614101
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -10378,7 +10378,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 000000000f78888a3bc69e496fe04d00191e6a77
+  m_ApplyToSortingLayers: 0000000055d95c2f5bd621637b288be4
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -10791,9 +10791,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1235142203
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 794614101
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -13853,9 +13853,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1235142203
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 794614101
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16

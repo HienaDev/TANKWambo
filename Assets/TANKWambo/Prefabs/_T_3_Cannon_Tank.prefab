@@ -183,8 +183,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: cba95119d391c604895e0d40ad41beb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -281,7 +281,7 @@ MonoBehaviour:
   _showInfo: 1
   _explanation: "When a collision with a bounding volume with tags [Bullet,Explosion]
     starts:\n          plays sound explosion_sound at volume 1 and at pitch 1\n         
-    spawns prefab _M_Explosion at the position of this object (_T_3_Cannon_Tank)\n         
+    spawns prefab _M_Explosion at the position of this object (3_Cannon_Tank)\n         
     destroys the parent of this object\n"
   description: 
   enableTrigger: 1
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: Spawns prefab _M_Explosion at the position of this object (Swarm_Tank)
+  _explanation: Spawns prefab _M_Explosion at the position of this object (3_Cannon_Tank)
   description: 
   enableAction: 1
   hasTags: 0
@@ -360,9 +360,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "When ((ProbeIntersect(_T_3_Cannon_Tank,[Wall,Destructable]):\n         
-    disables component _T_3_Cannon_Tank (MovementFollow) on _T_3_Cannon_Tank\nelse\n         
-    enables component _T_3_Cannon_Tank (MovementFollow) on _T_3_Cannon_Tank\n"
+  _explanation: "When ((ProbeIntersect(3_Cannon_Tank,[Wall,Destructable]):\n         
+    disables component 3_Cannon_Tank (MovementFollow) on 3_Cannon_Tank\nelse\n         
+    enables component 3_Cannon_Tank (MovementFollow) on 3_Cannon_Tank\n"
   description: 
   enableTrigger: 1
   allowRetrigger: 1
@@ -381,6 +381,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 12563359}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -582,8 +583,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dad59d907e60b9742bd9d1e4750535aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -650,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(_T_3_Cannon_Tank,[Wall]) and Every 2 seconds,
+  _explanation: "If (not (ProbeIntersect(3_Cannon_Tank,[Wall]) and Every 2 seconds,
     trigger the actions::\n          spawns prefab _B_Default at the position of
     Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
@@ -667,6 +668,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 12563356}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -706,6 +708,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -905,8 +908,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dad59d907e60b9742bd9d1e4750535aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -973,7 +976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(_T_3_Cannon_Tank,[Wall]) and Every 2 seconds,
+  _explanation: "If (not (ProbeIntersect(3_Cannon_Tank,[Wall]) and Every 2 seconds,
     trigger the actions::\n          spawns prefab _B_Default at the position of
     Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
@@ -990,6 +993,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 12563356}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -1029,6 +1033,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -1134,8 +1139,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 5103727
-  m_SortingLayer: 3
+  m_SortingLayerID: 1663161947
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dad59d907e60b9742bd9d1e4750535aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1161,7 +1166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _showInfo: 1
-  _explanation: "If (not (ProbeIntersect(_T_3_Cannon_Tank,[Wall]) and Every 2 seconds,
+  _explanation: "If (not (ProbeIntersect(3_Cannon_Tank,[Wall]) and Every 2 seconds,
     trigger the actions::\n          spawns prefab _B_Default at the position of
     Bullet Spawner\n          plays sound shoot_sound at volume 1 and at pitch 1\n"
   description: 
@@ -1178,6 +1183,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 12563356}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
@@ -1217,6 +1223,7 @@ MonoBehaviour:
     rigidBody: {fileID: 0}
     axis: 0
     probe: {fileID: 0}
+    movementPlatformer: {fileID: 0}
     comparison: 0
     value: 0
     percentageCompare: 0
